@@ -1,7 +1,7 @@
 CC = xtensa-lx106-elf-gcc
 DEFS = -DLWIP_OPEN_SRC -DPBUF_RSV_FOR_WLAN -DEBUF_LWIP -DICACHE_FLASH
 COPT = -Os
-CFLAGS = $(DEFS) $(COPT) -Iinclude -Wl,-EL -mlongcalls -mtext-section-literals
+CFLAGS = $(DEFS) $(COPT) -Iinclude -Wl,-EL -mlongcalls -mtext-section-literals $(CFLAGS_EXTRA)
 # Install prefix of esp-open-sdk toolchain
 PREFIX = ~/toolchain/xtensa-lx106-elf
 
